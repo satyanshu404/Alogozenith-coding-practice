@@ -1,6 +1,10 @@
 # Prerequisites
 *.d
 
+# custom
+*.bin
+.cph
+
 # Compiled Object files
 *.slo
 *.lo
