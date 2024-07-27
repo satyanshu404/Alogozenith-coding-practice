@@ -4,6 +4,7 @@
 # custom
 *.bin
 .cph
+.vscode
 
 # Compiled Object files
 *.slo
