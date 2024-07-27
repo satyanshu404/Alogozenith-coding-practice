@@ -1,0 +1,25 @@
+Description
+Given a tree of n nodes, your task is to find a centroid, i.e., a node such that when it is appointed the root of the tree, each subtree has at most 
+⌊n/2⌋ nodes.
+
+Input Format
+The first input line contains an integer n: the number of nodes. The nodes are numbered 1,2,…,n.
+
+Then there are n−1 lines describing the edges. Each line contains two integers 
+a and b: there is an edge between nodes a and b.
+
+Output Format
+Print one integer: a centroid node. If there are several possibilities, print the smallest one.
+
+Constraints:
+1≤n≤2⋅10^5
+1≤a,b≤n
+
+Sample Input 1
+5
+1 2
+2 3
+3 4
+3 5
+Sample Output 1
+3
