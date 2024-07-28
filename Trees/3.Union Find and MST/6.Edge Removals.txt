@@ -1,0 +1,40 @@
+Description
+You have given an undirected graph G with N nodes, indexed from 1 to N and M edges, indexed from 1 to M.
+
+There are two types of operations:
+1 X: Remove the edge numbered X.
+2: Print the number of connected components in the graph.
+
+Input Format
+The first line of contains three space-separated numbers N, M, Q (1 ≤ N, M, Q ≤ 100000).
+
+The next M lines contain 2 space-separated integers u and v which depicts an edge between nodes u and v (1 ≤ u, v ≤ N). ith line denotes the ith edge.
+
+This is followed by Q lines, each describing an operation in the following format:
+1 X: Remove the edge numbered X.
+2: Print the number of connected components in the graph.
+
+There are no self-loops or multiple edges in the graph.
+
+Note: If there are multiple queries for removal of the same edge, then the last such query should be considered. Also, the index of the edges does not change after the removal of any of the edges between the nodes.
+
+ 
+
+Output Format
+The output should consist of the answer to each of the operations of the 2nd type printed on a new line.
+
+Constraints
+Sample Input 1
+3 3 5
+1 2
+2 3
+3 1
+2
+1 2
+2
+1 1
+2
+Sample Output 1
+1
+1
+2
