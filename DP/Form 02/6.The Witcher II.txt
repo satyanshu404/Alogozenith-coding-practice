@@ -1,0 +1,39 @@
+Description
+Gerald of Rivia also known as The Witcher wants to reach the end of the dungeon. The dungeon consists of n×m rooms laid out in a 2D grid. Gerald was initially positioned in the top-left room and must fight his way through, to the bottom-right room of the dungeon, where the exit is located.
+
+Gerald has an initial health point represented by a positive integer. If at any point his health point drops to 0 or below, he dies immediately.
+
+Some of the rooms are guarded by demons (represented by negative integers), so Gerald loses health upon entering these rooms; other rooms are either empty (represented as 0) or contain magic orbs that increase Gerald's health (represented by positive integers).
+
+To reach the exit as quickly as possible, Gerald decides to move only rightward or downward in each step.
+
+Return Gerald's minimum initial health so that he can exit the dungeon.
+
+Note that any room can contain threats or power-ups, even the first room Gerald enters and the bottom-right room where the exit is located.
+
+Input Format
+First-line contains T - the number of test cases.
+First-line of each test case contains 2 integers n and m.
+Each of the next n lines of each test case contains m integers, denoting the values of n×m dungeon's rooms.
+
+Output Format
+For each test case, output Gerald's minimum initial health so that he can exit the dungeon.
+
+Constraints
+1≤T≤100
+1≤n≤200
+1≤m≤200
+−1000≤dungeon[i][j]≤1000
+
+Sample Input 1
+2
+3 3
+-2 -3 3
+-5 -10 1
+10 30 -5
+1 1
+1
+
+Sample Output 1
+7
+1
