@@ -1,0 +1,48 @@
+Description
+You have an empty array and can perform the following operations on it:
+
+insert x - add integer x to the array
+remove x - remove integer x from the array. It's guaranteed the element present in it.
+getMean - find the mean of elements currently presents in the array.
+getMedian - find the median of elements currently present in the array,  if the count of the numbers is even, take the average of the two middle elements.
+getMode - find the mode of elements currently present in the array, if there is more than one potential element, assume that the mode is the smaller of all.
+If the array is empty at the point a query is asked about a metric(mean, median, mode), print -1.
+
+If any of the answers for the query is a fraction, let's say, P / Q in reduced form, the return the number (P*Q-1) Modulo 1000000007.
+
+Input Format
+The first line of the input contains one integer T - the number of test cases. Then T test cases follow.
+The first line of each test case contains one integer Q - the number of queries. 
+Each of the next Q lines contains a string S and integer X or just a string S - description of the query.
+
+Output Format
+For each test case, print the answer for the queries.
+
+Constraints
+1 ≤ T ≤ 105
+1 ≤ Q ≤ 105
+1 ≤ x ≤ 109
+It is guaranteed that the sum of Q over all test cases does not exceed 105.
+
+Sample Input 1
+1
+12
+insert 4
+insert 3
+insert 5
+getMean
+getMedian
+getMode
+insert 4
+remove 3
+insert 5
+getMean
+getMedian
+getMode
+Sample Output 1
+4
+4
+3
+500000008
+500000008
+4
